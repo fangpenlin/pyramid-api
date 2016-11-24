@@ -11,9 +11,7 @@ from pyramid_api.database import tables
 
 @pytest.fixture
 def app_settings():
-    db_url = os.environ.get(
-        'TEST_DB', 'postgres://pyramid_api:pyramid_api@localhost/pyramid_api_test'
-    )
+    db_url = os.environ.get('TEST_DB', 'postgres://pyramid_api:pyramid_api@localhost/pyramid_api_test')
     return {
         'sqlalchemy.url': db_url,
     }

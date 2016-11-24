@@ -4,7 +4,7 @@ machine:
   services:
     - postgresql
   environment:
-    TEST_DB: postgres://ubuntu:@127.0.0.1/pyramid_api
+    TEST_DB: postgres://ubuntu:@localhost/pyramid_api
 
 dependencies:
   cache_directories:
